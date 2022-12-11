@@ -25,14 +25,11 @@ public:
     {
         if(!root) return 0;
         int x=root->val;
-        // l(root->left);
-        // int z=r(root->right);
+
         int y=max(0,call(root->left,m));
         int z=max(0,call(root->right,m));
         m=max(m,x+y+z);
-        // m=max(m,x);
-        // m=max(m,x+y);
-        // m=max(m,x+z);
+
         return x+max(y,z);
     }
     int maxPathSum(TreeNode* root) {
