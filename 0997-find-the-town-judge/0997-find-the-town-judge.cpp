@@ -11,7 +11,7 @@ public:
         }
         for(int i=1;i<=n;++i)
         {
-            cout<<a[i].size()<<" "<<"\n";
+            // cout<<a[i].size()<<" "<<"\n";
             // if(a[i][0]==0) continue;
             // if(a[i].size()==0 && mp[i]==n-1) return i;
             if(mpp[i]==0 && mp[i]==n-1) return i;
