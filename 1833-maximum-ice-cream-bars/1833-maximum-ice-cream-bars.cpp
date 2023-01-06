@@ -9,7 +9,7 @@ public:
             {
                 coins-=i;
                 ++ans;
-            }
+            }else return ans;
         }
         return ans;
     }
